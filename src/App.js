@@ -1,7 +1,5 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
    const [data, setData] = useState([]);
@@ -42,7 +40,6 @@ function App() {
          <div className="posts-container">
             {data.map((item, index) => (
                <div className="post" key={index}>
-                  {/* <FontAwesomeIcon icon={faNewspaper} size="2x" color="#007bff" /> */}
                   <h2>ID: {item.post.id} {item.post.title}</h2>
                   <p>{item.post.body}</p>
                   <h3>Comments:</h3>
